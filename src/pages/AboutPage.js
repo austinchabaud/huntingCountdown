@@ -1,45 +1,40 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
-import puppyimg from '../assets/images/puppyimg.jpg';
-import ourimg from '../assets/images/ourimg.jpg';
 const AboutPage = (props) => {
 	return (
 		<div>
 			<Hero title={props.title} />
 			<Content>
 				<p>
-					My name is Austin. I'm a web developer and designer from North
-					Alabama.
+					This website was created for hunters who find themselves "Counting
+					Down" the days until hunting season. Alabama is currently the only
+					state that this website is used for but hopefully soon I can update
+					the site for other states.
 				</p>
 				<p>
-					During the day I'm a front-end developer at a local web design
-					company. In the afternoon I am usually working on side projects and
-					building my own web apps.
-				</p>
-				<p>
-					My latest project
+					Feel free to email me at{' '}
 					<a
-						href='https://github.com/austinchabaud'
+						href='mailto:austinlchabaud@gmail.com'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						{' Cloud Memories '}
+						{' here '}
+					</a>{' '}
+					if you experience any bugs on the website or if you would like an app
+					like this built for you!
+				</p>
+				<p>
+					This app was created by
+					<a
+						href='https://austinchabaud.com'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						{' Austin Chabaud'}
 					</a>
-					is a simple social media app using MERN that allows users to post
-					memories they want to share with their friends.
 				</p>
 			</Content>
-			<div className='image-block'>
-				<div className='myimg'>
-					<img className='g-card-image' alt='' src={ourimg} />
-					<p>Enjoying our days together</p>
-				</div>
-				<div className='puppyimg'>
-					<img className='g-card-image' alt='' src={puppyimg} />
-					<p>My buddy Cash enjoying the lake</p>
-				</div>
-			</div>
 		</div>
 	);
 };

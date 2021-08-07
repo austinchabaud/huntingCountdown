@@ -2,10 +2,11 @@ import React from 'react';
 
 import Card from './Card';
 
-import kindpic from '../assets/images/kindness-img.png';
-import wrenlogo from '../assets/images/wren.jpg';
-import weatherimg from '../assets/images/weather-img.png';
-import git from '../assets/images/githubfind.png';
+import zonea from '../assets/images/zonea.png';
+import zoneb from '../assets/images/zoneb.png';
+import zonec from '../assets/images/zonec.png';
+import zoned from '../assets/images/zoned.png';
+import zonee from '../assets/images/zonee.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 class Carousel extends React.Component {
@@ -18,7 +19,7 @@ class Carousel extends React.Component {
 					id: 0,
 					title: 'Wren Mountain Media',
 					subTitle: 'Custom Software and Web Design ',
-					imgSrc: wrenlogo,
+					imgSrc: zonea,
 					link: 'https://www.wrenmountain.com',
 					selected: false,
 				},
@@ -27,7 +28,7 @@ class Carousel extends React.Component {
 					title: 'GitHub Finder',
 					subTitle:
 						'React App using GitHub api to search users and view their profile',
-					imgSrc: git,
+					imgSrc: zoneb,
 					link: 'https://hardcore-borg-17bb74.netlify.app/',
 					selected: false,
 				},
@@ -35,7 +36,7 @@ class Carousel extends React.Component {
 					id: 2,
 					title: 'Weather Search App',
 					subTitle: 'Search weather in any city or country in the world.',
-					imgSrc: weatherimg,
+					imgSrc: zonec,
 					link: 'https://www.weatherreactapp.xyz/',
 					selected: false,
 				},
@@ -43,7 +44,7 @@ class Carousel extends React.Component {
 					id: 3,
 					title: 'Kindness Challenge',
 					subTitle: 'Find essential resources on this community driven app',
-					imgSrc: kindpic,
+					imgSrc: zoned,
 					link: 'https://daniellimhong.github.io/kindness-challenge/',
 					selected: false,
 				},
@@ -51,7 +52,7 @@ class Carousel extends React.Component {
 					id: 4,
 					title: 'ZONE A',
 					subTitle: 'Hunting in alabama ',
-					imgSrc: kindpic,
+					imgSrc: zonee,
 					link: 'https://daniellimhong.github.io/kindness-challenge/',
 					selected: false,
 				},

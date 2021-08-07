@@ -7,6 +7,7 @@ import './App.css';
 
 import Footer from './components/Footer';
 import Home from './pages/HomePage';
+import DeerZone from './pages/DeerZone';
 import AboutPage from './pages/AboutPage';
 class App extends React.Component {
 	constructor(props) {
@@ -15,6 +16,7 @@ class App extends React.Component {
 			title: 'Alabama Hunting Season',
 			headerLinks: [
 				{ title: 'Home', path: '/' },
+				{ title: 'Zones', path: '/zones' },
 				{ title: 'About', path: '/about' },
 			],
 			home: {
@@ -23,8 +25,11 @@ class App extends React.Component {
 				email: 'austinlchabaud@gmail.com',
 				text: 'Click on your zone below!',
 			},
+			zones: {
+				title: 'Deer Zones 2021-2022',
+			},
 			about: {
-				title: 'About me',
+				title: 'About This App',
 			},
 		};
 	}
@@ -44,6 +49,9 @@ class App extends React.Component {
 								<Nav className='ml-auto'>
 									<Link className='nav-link' to='/'>
 										Home
+									</Link>
+									<Link className='nav-link' to='/zones'>
+										Zones
 									</Link>
 									<Link className='nav-link' to='/about'>
 										About
@@ -65,10 +73,14 @@ class App extends React.Component {
 						/>
 
 						<Route
+							path='/zones'
+							render={() => <DeerZone title={this.state.zones.title} />}
+						/>
+						<Route
 							path='/about'
 							render={() => <AboutPage title={this.state.about.title} />}
 						/>
-						<Footer />
+						{/* <Footer /> */}
 					</Container>
 				</Router>
 			</div>

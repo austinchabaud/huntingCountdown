@@ -16,7 +16,7 @@ const Hero = (props) => {
 						{props.subTitle && (
 							<h3 className=' text-light'>{props.subTitle}</h3>
 						)}
-						{props.text && <h3 className='lead  text-light'>{props.text}</h3>}
+						{props.text && <h3 className='lead text-light'>{props.text}</h3>}
 					</Col>
 				</Row>
 			</Container>
