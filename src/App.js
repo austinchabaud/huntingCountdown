@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-import Footer from './components/Footer';
 import Home from './pages/HomePage';
 import DeerZone from './pages/DeerZone';
 import AboutPage from './pages/AboutPage';
@@ -20,9 +19,8 @@ class App extends React.Component {
 				{ title: 'About', path: '/about' },
 			],
 			home: {
-				title: 'Alabama Hunting Season 2021-2022',
-				subTitle: 'Archery / Firearm Season',
-				email: 'austinlchabaud@gmail.com',
+				title: 'Alabama Hunting Season Countdown',
+				subTitle: 'Bow and Arrow / Firearm Season 2021-2022',
 				text: 'Click on your zone below!',
 			},
 			zones: {
@@ -39,7 +37,11 @@ class App extends React.Component {
 				<Router>
 					<Container className='p-0' fluid={true}>
 						<Navbar className='border-bottom' bg='light' expand='lg'>
-							<Navbar.Brand>Alabama Hunting</Navbar.Brand>
+							<Navbar.Brand>
+								<Link className='nav-link' to='/'>
+									Alabama Hunting
+								</Link>
+							</Navbar.Brand>
 
 							<Navbar.Toggle
 								className='border-0'
@@ -66,7 +68,6 @@ class App extends React.Component {
 								<Home
 									title={this.state.home.title}
 									subTitle={this.state.home.subTitle}
-									email={this.state.home.email}
 									text={this.state.home.text}
 								/>
 							)}
@@ -80,7 +81,6 @@ class App extends React.Component {
 							path='/about'
 							render={() => <AboutPage title={this.state.about.title} />}
 						/>
-						{/* <Footer /> */}
 					</Container>
 				</Router>
 			</div>

@@ -8,9 +8,29 @@ const CardInfo = (props) => {
 		<animated.div className='g-card-info' style={style}>
 			<p className='g-card-title'>{props.title}</p>
 			<p className='g-card-sub-title'>{props.subTitle}</p>
+			<p className='g-card-sub-title'>{props.stats}</p>
 			<a href={props.link} target='_blank' rel='noopener noreferrer'>
 				View Project
 			</a>
+			<div className='countdown'>
+				{props.timer}
+				<div className='exact'>
+					<div className='value'>Time</div>
+					<div className='type'>Days</div>
+				</div>
+				<div className='exact'>
+					<div className='value'>Time</div>
+					<div className='type'>Hours</div>
+				</div>
+				<div className='exact'>
+					<div className='value'>Time</div>
+					<div className='type'>Minutes</div>
+				</div>
+				<div className='exact'>
+					<div className='value'>Time</div>
+					<div className='type'>Seconds</div>
+				</div>
+			</div>
 		</animated.div>
 	);
 };
