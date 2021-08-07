@@ -27,6 +27,10 @@ code {
 	margin-top: 0.625rem;
 	min-height: 6.25rem;
 	max-width: 17.8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .g-card-title {
@@ -45,8 +49,6 @@ code {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	border-bottom-left-radius: 0.625rem;
-	border-bottom-right-radius: 0.625rem;
 	background: rgb(0, 128, 0);
 }
 

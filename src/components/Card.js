@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CardInfo from '../components/CardInfo';
-
+import Countdown from '../components/Countdown';
 const Card = (props) => {
 	return (
 		<div className='d-inline-block g-card'>
@@ -12,11 +12,11 @@ const Card = (props) => {
 			/>
 			<CardInfo
 				title={props.item.title}
+				title2={props.item.title2}
 				subTitle={props.item.subTitle}
-				stats={props.item.stats}
-				link={props.item.link}
-				timer={props.item.timer}
+				subTitle2={props.item.subTitle2}
 			/>
+			<Countdown openDate={props.openDate} />
 		</div>
 	);
 };

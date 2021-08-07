@@ -21,7 +21,7 @@ class App extends React.Component {
 			home: {
 				title: 'Alabama Hunting Season Countdown',
 				subTitle: 'Bow and Arrow / Firearm Season 2021-2022',
-				text: 'Click on your zone below!',
+				text: 'Check the countdown on your zone below!',
 			},
 			zones: {
 				title: 'Deer Zones 2021-2022',
@@ -36,26 +36,26 @@ class App extends React.Component {
 			<div className='App'>
 				<Router>
 					<Container className='p-0' fluid={true}>
-						<Navbar className='border-bottom' bg='light' expand='lg'>
+						<Navbar className='border-bottom-dark' bg='dark' expand='lg'>
 							<Navbar.Brand>
-								<Link className='nav-link' to='/'>
+								<Link className='nav-link text-danger' to='/'>
 									Alabama Hunting
 								</Link>
 							</Navbar.Brand>
 
 							<Navbar.Toggle
-								className='border-0'
+								className='border-0 bg-white'
 								aria-controls='navbar-toggle'
 							/>
 							<Navbar.Collapse id='navbar-toggle'>
 								<Nav className='ml-auto'>
-									<Link className='nav-link' to='/'>
+									<Link className='nav-link text-white' to='/'>
 										Home
 									</Link>
-									<Link className='nav-link' to='/zones'>
+									<Link className='nav-link text-white' to='/zones'>
 										Zones
 									</Link>
-									<Link className='nav-link' to='/about'>
+									<Link className='nav-link text-white' to='/about'>
 										About
 									</Link>
 								</Nav>
