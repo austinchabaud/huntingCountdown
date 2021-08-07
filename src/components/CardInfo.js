@@ -1,4 +1,6 @@
 import React from 'react';
+import Countdown from './Countdown';
+import Countdown2 from './Countdown2';
 import { useSpring, animated } from 'react-spring';
 
 const CardInfo = (props) => {
@@ -8,46 +10,10 @@ const CardInfo = (props) => {
 		<animated.div className='g-card-info' style={style}>
 			<p className='g-card-title'>{props.title}</p>
 			<p className='g-card-sub-title'>{props.subTitle}</p>
-			<p className='g-card-sub-title'>{props.openDate}</p>
-			<div className='countdown'>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Days</div>
-				</div>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Hours</div>
-				</div>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Minutes</div>
-				</div>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Seconds</div>
-				</div>
-			</div>
+			<Countdown openDate={props.openDate} />
 			<p className='g-card-title'>{props.title2}</p>
 			<p className='g-card-sub-title'>{props.subTitle2}</p>
-			<div className='countdown'>
-				{props.timer}
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Days</div>
-				</div>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Hours</div>
-				</div>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Minutes</div>
-				</div>
-				<div className='exact'>
-					<div className='value'>Time</div>
-					<div className='type'>Seconds</div>
-				</div>
-			</div>
+			<Countdown2 openDate2={props.openDate2} />
 		</animated.div>
 	);
 };

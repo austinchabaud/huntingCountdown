@@ -8,9 +8,22 @@ const AboutPage = (props) => {
 			<Content>
 				<p>
 					This website was created for hunters who find themselves "Counting
-					Down" the days until hunting season. Alabama is currently the only
-					state that this website is used for but hopefully soon I can update
-					the site for other states.
+					Down" the days until hunting season. Specific season dates vary by
+					zone and antler/antlerless deer. I built this website as a fun project
+					and is by no means meant to be completely accurate. If you need a list
+					for specific seasons for your zone I would check out{' '}
+					<a
+						href='https://www.outdooralabama.com/seasons-and-bag-limits/deer-season'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						{' Outdoor Alabama '}
+					</a>
+					for a more accurate listing of your zone.
+				</p>
+				<p>
+					Alabama is currently the only state that this website is used for but
+					hopefully soon I can update the site for other states.
 				</p>
 				<p>
 					Feel free to email me at{' '}

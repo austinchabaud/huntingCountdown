@@ -20,7 +20,7 @@ class App extends React.Component {
 			],
 			home: {
 				title: 'Alabama Hunting Season Countdown',
-				subTitle: 'Bow and Arrow / Firearm Season 2021-2022',
+				subTitle: "If you don't know your zone click on the 'Zones' tab above.",
 				text: 'Check the countdown on your zone below!',
 			},
 			zones: {

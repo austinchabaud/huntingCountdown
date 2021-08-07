@@ -50,6 +50,7 @@ code {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	background: rgb(0, 128, 0);
+	max-width: fit-content;
 }
 
 .countdown .exact {

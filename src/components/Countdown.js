@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const Countdown = () => {
+const Countdown = (props) => {
 	const [timerDays, setTimerDays] = useState('00');
 	const [timerHours, setTimerHours] = useState('00');
 	const [timerMinutes, setTimerMinutes] = useState('00');
@@ -9,7 +9,7 @@ const Countdown = () => {
 	let interval = useRef();
 
 	const startTimer = () => {
-		const countdownDate = new Date('August 27, 2021 00:00:00 ').getTime();
+		const countdownDate = new Date(props.openDate).getTime();
 		interval = setInterval(() => {
 			const now = new Date().getTime();
 			const distance = countdownDate - now;
@@ -40,43 +40,24 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<section className='timer-container'>
-			<section className='timer'>
-				<div>
-					<h2>Countdown timer</h2>
-					<p>New fake timer react</p>
-				</div>
-				<div>
-					<section>
-						<p>{timerDays}</p>
-						<p>
-							<small>Days</small>
-						</p>
-					</section>
-					<span>:</span>
-					<section>
-						<p>{timerHours}</p>
-						<p>
-							<small>Hours</small>
-						</p>
-					</section>
-					<span>:</span>
-					<section>
-						<p>{timerMinutes}</p>
-						<p>
-							<small>Minutes</small>
-						</p>
-					</section>
-					<span>:</span>
-					<section>
-						<p>{timerSeconds}</p>
-						<p>
-							<small>Seconds</small>
-						</p>
-					</section>
-				</div>
-			</section>
-		</section>
+		<div className='countdown'>
+			<div className='exact'>
+				<div className='value'>{timerDays}</div>
+				<div className='type'>Days</div>
+			</div>
+			<div className='exact'>
+				<div className='value'>{timerHours}</div>
+				<div className='type'>Hours</div>
+			</div>
+			<div className='exact'>
+				<div className='value'>{timerMinutes}</div>
+				<div className='type'>Minutes</div>
+			</div>
+			<div className='exact'>
+				<div className='value'>{timerSeconds}</div>
+				<div className='type'>Seconds</div>
+			</div>
+		</div>
 	);
 };
 

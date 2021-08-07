@@ -8,6 +8,11 @@ const HomePage = (props) => {
 		<div className='bg-dark'>
 			<Hero title={props.title} subTitle={props.subTitle} text={props.text} />
 			<Carousel />
+			<p className='bg-light'>
+				<small>
+					*Specific season dates vary by zone and antler/antlerless deer
+				</small>
+			</p>
 		</div>
 	);
 };
