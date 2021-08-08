@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import Analytics from './Analytics';
 
 import Home from './pages/HomePage';
 import DeerZone from './pages/DeerZone';
@@ -83,6 +84,7 @@ class App extends React.Component {
 						/>
 					</Container>
 				</Router>
+				<Analytics />
 			</div>
 		);
 	}
