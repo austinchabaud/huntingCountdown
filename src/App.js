@@ -19,7 +19,7 @@ class App extends React.Component {
 				{ title: 'About', path: '/about' },
 			],
 			home: {
-				title: 'Alabama Hunting Season Countdown',
+				title: 'Alabama Deer Hunting Season Countdown',
 				subTitle: "If you don't know your zone click on the 'Zones' tab above.",
 				text: 'Check the countdown on your zone below!',
 			},
