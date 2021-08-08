@@ -44,7 +44,7 @@ class Carousel extends React.Component {
 					subTitle: 'Oct. 15, 2021 - Feb. 10, 2022*',
 					title2: 'Firearms',
 					imgSrc: zonec,
-					subTitle2: 'Nov. 20, 2021 - Feb. 10, 2022*',
+					subTitle2: 'Nov. 29, 2021 - Feb. 10, 2022*',
 					selected: true,
 					openDate: 'October 15, 2021 04:00:00 ',
 					openDate2: 'November 29, 2021 04:00:00 ',
