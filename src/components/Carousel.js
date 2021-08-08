@@ -30,7 +30,7 @@ class Carousel extends React.Component {
 				{
 					id: 1,
 					title: 'Archery or Spear',
-					subTitle: 'Oct. 15, 2021 - Feb. 10, 2021*',
+					subTitle: 'Oct. 15, 2021 - Feb. 10, 2022*',
 					title2: 'Firearms',
 					imgSrc: zoneb,
 					subTitle2: 'Nov. 20, 2021 - Feb. 10, 2022*',
