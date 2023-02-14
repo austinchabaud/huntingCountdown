@@ -8,7 +8,7 @@ const DeerZone = (props) => {
 			<Hero title={props.title} />
 			<Content>
 				<img className='responsive' alt='' src={deerzone} />
-				<p>Deer Zone Map 2021-2022</p>
+				<h1>Deer Zone Map 2023-2024</h1>
 			</Content>
 		</div>
 	);
