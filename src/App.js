@@ -25,7 +25,7 @@ class App extends React.Component {
 				text: 'Check the countdown on your zone below!',
 			},
 			zones: {
-				title: 'Deer Zones 2021-2022',
+				title: 'Deer Zones 2023-2024',
 			},
 			about: {
 				title: 'About This App',
@@ -40,7 +40,7 @@ class App extends React.Component {
 						<Navbar className='border-bottom-dark' bg='dark' expand='lg'>
 							<Navbar.Brand>
 								<Link className='nav-link text-danger' to='/'>
-									Alabama Hunting
+									Hunting Season Countdown
 								</Link>
 							</Navbar.Brand>
 
